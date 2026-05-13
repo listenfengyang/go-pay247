@@ -3,6 +3,7 @@ package go_pay247
 type Pay247InitParams struct {
 	MerchantInfo `yaml:",inline" mapstructure:",squash"`
 
+	Ip              string `json:"ip" mapstructure:"ip" config:"ip" yaml:"ip"`
 	PayinUrl        string `json:"payinUrl" mapstructure:"payinUrl" config:"payinUrl" yaml:"payinUrl"`
 	PayinNotifyUrl  string `json:"payinNotifyUrl" mapstructure:"payinNotifyUrl" config:"payinNotifyUrl" yaml:"payinNotifyUrl"`
 	PayoutUrl       string `json:"payoutUrl" mapstructure:"payoutUrl" config:"payoutUrl" yaml:"payoutUrl"`
