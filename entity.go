@@ -135,8 +135,9 @@ type Pay247PayoutCallbackReq struct {
 	PayMethod  string `json:"pay_method" form:"pay_method" mapstructure:"pay_method"`
 	Fee        string `json:"fee" form:"fee" mapstructure:"fee"`
 	Status     string `json:"status" form:"status" mapstructure:"status"`
-	PaidAt     string `json:"paid_at" form:"paid_at" mapstructure:"paid_at"`
+	PaidAt     int64  `json:"paid_at" form:"paid_at" mapstructure:"paid_at"`
 	Error      string `json:"error" form:"error" mapstructure:"error"`
-	Timestamp  int64  `json:"timestamp" form:"timestamp" mapstructure:"timestamp"`
+	CreatedAt  int64  `json:"created_at" form:"created_at" mapstructure:"created_at"`
+	Receipt    string `json:"receipt" form:"receipt" mapstructure:"receipt"`
 	Sign       string `json:"sign" form:"sign" mapstructure:"sign"`
 }
