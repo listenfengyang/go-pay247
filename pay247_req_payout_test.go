@@ -30,11 +30,11 @@ func TestPay247Payout(t *testing.T) {
 func GenPay247PayoutRequestDemo() Pay247PayoutReq {
 	return Pay247PayoutReq{
 		MchOrderNo:  "R898543254325432",
-		Currency:    "USD", // 柬埔寨出金传USD
-		Amount:      "99.11",
+		Currency:    "PHP", // 柬埔寨出金传USD
+		Amount:      "100.11",
 		PayMethod:   "BANK",
 		AccountName: "Test Account",
 		AccountNo:   "1234567890",
-		BankCode:    "BDO",
+		BankCode:    "GCASH",
 	}
 }

@@ -47,11 +47,11 @@ func TestPay247Payin(t *testing.T) {
 
 func GenPay247PayinRequestDemo() Pay247PayinReq {
 	return Pay247PayinReq{
-		MchOrderNo: "TRADE-4051891",
+		MchOrderNo: "TRADE-4051891222",
 		MchUserId:  "U405189",
-		Currency:   "USD", // 柬埔寨入金传USD
-		Amount:     "99.11",
-		PayMethod:  "EWALLET",
+		Currency:   "PHP", // 柬埔寨入金传USD
+		Amount:     "100.11",
+		PayMethod:  "GCASH",
 		PayTheme:   "link",
 		ClientIp:   "127.0.0.1",
 	}
